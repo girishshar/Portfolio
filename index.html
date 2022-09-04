@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <link rel="stylesheet" href="/style.css">
+  <title>Portfolio</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <header id="main-header">
+      <div class="row no-gutters">
+        <div class="col-md-5 col-lg-4">
+          <img src="https://i.ibb.co/dpNkN6Z/photo.jpg" alt="" boader="5px" height="375px" width="350px">
+        </div>
+
+        <div class="col-md-7 col-lg-8">
+          <div class="d-flex flex-column">
+            <div class="text-white bg-dark p-5">
+              <div class="d-flex flex-row justify-content-between align-items-center">
+                <h1 class="display-4">Girish Sharma</h1>
+                <a href="https://twitter.com" class="text-white">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://facebook.com" class="d-none d-md-block text-white">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com" class="d-none d-sm-block text-white">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/girishshar" class="text-white">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <p class="lead text-white bg-super-dark p-4 mb-0">Full Stack Web Develope<br>
+              I'm a Full Stack Web Developer. I like to code things from scratch, and enjoy bringing ideas to life in
+              the browser.
+
+            </p>
+
+            <nav class="text-white text-center">
+              <ul class="d-flex flex-row align-items-stretch list-unstyled mb-0">
+                <li class="portfolio-item bg-primary p-4" data-toggle="collapse" data-target="#home">
+                  <i class="fas fa-home fa-2x"></i>
+                  <span class="d-none d-sm-block">Home</span>
+                </li>
+                <li class="portfolio-item bg-success p-4" data-toggle="collapse" data-target="#education">
+                  <i class="fas fa-graduation-cap fa-2x"></i>
+                  <span class="d-none d-sm-block">Education</span>
+                </li>
+                <li class="portfolio-item bg-warning p-4" data-toggle="collapse" data-target="#project">
+                  <i class="fas fa-folder-open fa-2x"></i>
+                  <span class="d-none d-sm-block">Projects</span>
+                </li>
+                <li class="portfolio-item bg-danger p-4" data-toggle="collapse" data-target="#contact">
+                  <i class="fas fa-envelope fa-2x"></i>
+                  <span class="d-none d-sm-block">Contect us</span>
+                </li>
+                <li class="">
+                  <a href="https://drive.google.com/file/d/1eTG93f9Kt4HIqmbFyl_5AOaD2iNQYN_9/view?usp=sharing"
+                    download>
+                    <img
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISERISERUSEhESEhIQERAREhQPEhISGBUZGRgUGRgcIS4oKR4sIxgYNDgnKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHz8rJSs7NDE0NDQ0NDQ0NTQxNjQ0NDQ1NzY0NDQ0NDQ0NDQ0MTQ0NDQ0NDE0NDQ0NDQ0NDQ0NP/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAQUBAAAAAAAAAAAAAAAABQIDBAYHAf/EAEkQAAIBAgIEBgsOBAcBAAAAAAABAgMRBBIFBiExQVFhcbGyExQiIzJzdIGRodEVFiQlMzVCUlNygpKzwQc0Y/EXRJOi0uHwQ//EABkBAQEBAQEBAAAAAAAAAAAAAAAEAQMCBf/EAC4RAQACAQIDBgQHAQAAAAAAAAABAhEDMQQSIUFhcYGRwRMzUVIyobHR4fDxIv/aAAwDAQACEQMRAD8A7MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFE5qKu/7ns5JJt7ltI2pUcnd+ZcSAvzxLe7YvWW8z4W/SW0xmAu3PMxbPbgXLi5aPQLlxctXFwLtxctXAF24uWgBduLlu54BdzPjfpKo15LhvzljMGwJClVUt2/hRdIqMmndb0SFGpmSfpXEwLoAAAAAAAAAAAADC0hUsox+s7+Zf3RhplzS77qHM+lFikwLoB6BD61N9p1bNq7inlbi7ZlsuiAqRwPYIuNWaxDpxajCdRzVRxWzZu2+g2TWKjKeGnGCcpXg0krvZJGNjNEueFp5FkxFOnCUZwSU86irrnuVaVoikZnt/bfuS6lbTeZiM9I99u9D6Tc3DR6xLm9slVeaUW4ZorPK3Dl4eckcHh9HupT7HNueZOC7JU2yW1L1bizpB1qiwVWdKUpU5SdaEY3byyje0X9ZRbSfGSFHSdNzilhcRBuSipOjBKN3a7alexts8sY79sY3n++GGUiOeZnuxnfaP74obFwoLE1npGFWcZS7zK0p04Qu7JRjtWy25cfCVYqjTWj8RGnWVbDynBQSk5OmsyvB32rg7n2klHEV6M6sMRTqYinKbnSnCFOWWL+g1s2eveYeG0LOpHFSydhVfI4Um7NZJOSvxcXnPUW2mZ6Ry98bxt2x3+bxamYmIjrPN2TE9Ynf6x9PLCcwzfakHd37Xi73237GttzU4Q+K4QTlGPbEo9zJx2d07bOC5M08fWjh1QeHrOtGn2FNJOm7Ryqd735bWMfE6KqQwNOkouVTsqnKMe6tmzcXOjzpRyzi3baPp2Z6verPNma/bP5zHRapYmVPR1Wi5S7JCrLDJuTztSlfY9/guSX3SOjSlTweKp56jy16a8OXAndLbubiiZxOipvHxaT7DKpCtLZ3N4xb2vjvdfiMfE4Cq6OLSjLNOupQVntXdbVybUdKTTpt1mJ9ZhzvFuu/SJr6RPX9PRVSo6NyRzVLPKs16lRWdtptUIqKSW5JJXbbslxshKekoRjFPC4htRSbVCm02ltt3RN0p5oxlZrNFSyyWWSur2a4yXUm3bnzVacVjbHk9B6eHJ1UtmTgKndOPGr+df39Ri1DzR777H8XQwJsAAAAAAAAAAAABEaY8OP3X0lqii9pfwocz6S3RQF2x7lKrGFpvHPD4WvXjFTlSpzqRg3lUnFXSbAY/SNDDrNXqU6S4HUnGF+a5r2K1/wADC6purWa4KVKTT5pSsvWQGDvpPH0qmLowjFU3BQhOUk0s073suM3/AAuh8NS8ClCPKoK/pOtqRTpfdyreb5mmMNU9/FWfyOBrz4nOSh1VILWXSj3YBJctWf8AwN3UUtyXoKrHnNft/P8Ax6xb7vy/1pEdacdDbVwEsvC4VJN+hw/cktFa34avJU556FRuyp1oqN3xKSbjfkvfkNkaIDW7R9F4SvVnCLnTpyqRlazvFXtfiNjkmcYx4MnniMxOfH94YultdsLQm6UFUxNZPK6dCKmovicm0r8iu+QwffPpKe2lo+0eB1Kkk/RkJ7VvQ+HoUKbpQjGU4RnKdk5NtX3+cmrGZrHZluLT24aP74NLLwsBB81SX/FlS1zrw+WwVWK4XTmpdZRN2seOCe9L0Dmr9v5z/Jy2+79PbDVMNr5g5WU1Wot/aUm0ueUcy9ZPYDSVDEK9GpTqLhyTUmudIqxOiqFT5SnTlyuKv6TRMZUjgMfVeFpQco0oJKUmk1Pa1fa/oo9VpW84rnP0eLXtSM3xj6uiCxh6Hxc62Hp1akVCc45pQi8yi77kzORy26OsTnrCzVRRo/5aP4uhlyqijAfLR/F0MNTYAAAAAAAAAAAACK0t4UOZ9JRRRc0r4UOZ9JRRQF+xDa3fN+L8RU6rJmxD64fN2M8nqdVmxuydmn6ov4VR5n1GdIsc01PfwqhzP9NnTLFPGfM8veUvBfLnx9oeWFj2wsSq3liH1uXxdi/J6vVZM2IfW/5uxnk1Xqs2N2W2lmaKXwej4qHVRl2MXRP8vR8VDqoy7Cd2xs8sQE9b8DGcodkbcW4txpVJRut9mltJ6r4Mvuy6DjWFpKyZ34fRjUzlNxGtOljDo/vuwX2kv9Kp7DSdPaQp1MbVq023CdOnGMssldxTvsZjZEedjRZp8NWluaEWpxM6leWYdA1Ux9KrhoQpzUqlNWnDapRu3Z2fByk8kaDqNSUcXNrhoz60Df0Q69OXUmPP1fQ0L8+nE/3os1UW8Cu+x/F0MvVUWcF8rH8XVZxdk0AAAAAAAAAAAAAi9KeFDmfSU0CrSnhQ5n0lNAC+Q+uPzdjfJqvUZMkLrl8243yar1GI3ZOzSdS5fC6HNL9NnUDlWpMvhtDml+mzqpVxnzPL3lNwny/P2gABKqCH1w+bsZ5NV6rJghtcPm7GeTVeqzY3ZOzO0T/LUPFQ6qMsxNEfy1DxVPqIyzJ3bGymorxkuR9BxvBPubPeth2YgcTqzgpVJTlFwlNuUlGq4Rbe95eDzFHD60aczlNxGjbViMNAzHmdG9PVjAcb/wBc0PWShCjjalKk32OMKco91n2yTvt8xbp8TW9uWEV+FtSvNLY9SHfFT8TPrRN7IDUvCUoYWnUpqPZKkU6k75pN33ci5CfIOIvFtSZjw9H0OHpNNOInx9VFUs4L5WP4uhl6qWcF8rH8XQzi7JkAAAAAAAAAAAABF6VfdQ5n0lFBnul33UOZ9JboyAy0yF1zfxbjfJqvVZLxkQmuk/i3G+TVeozY3Giajy+G0OaX6cjrFzkOokvh1D7s/wBOR1vMU8Z8zy95TcL+Dz/ZXcXKMwzEqlXch9cn8W43yar1WSuYhtcpfFuN8mq9Rmxuydkjoh/BqHiqXURmXI/REvg1DxVLqIzMxk7te1p5YSfFGT9COIzjKvOdSpJylOTk223ve47TiZd7n9yfVZxrDO0UWcHWJmco+MtMRGFrtCIWAiZWYZi/khDzWbB/Duk6eLqKLajKlJyjfY2pRs7ednRrnPNRZfCn4ufTE3/MfM4qIjU6dz6XCzM6fXvKr2FrAvvsfxdDKqr2FvR779H8XQydQnAAAAAAAAAAAAAEPpl93T5n0osUZFzTr7qnzS6UY9GQGZchdcn8W43yat1GSqmQ2uc76Nxnk1XqM2NxoGokvh9D7s/05HXHI4LgMfUoTjUoyUakYtRk0pWvGzdnzl+rpB1XfGYvH1L76dKMYQ9Cmo/7S3idK1rcyTQvFa4l2bF6ZwtH5WvRp+MqQh0sjZa66NX+aov7ss/Qcxw1XQkPCw+OqPhcskb/AJZokqentCxVlgK7+9CnLpqE/wAPun0/l35/D1/h0LD63aPnJRjiaGZ7lKpGDfNc81uqxlo3GOLUk8LWs07p9wzneI01oSas8DiY8sFGD9VQhqmOhBVIYGeKp0KsJwqUK8YZMslZ2yyavt32T2b2bXRzPTPnDJ1Ijd16WklhtHQrZc/Y8PTkoXtmeWKSvxXZp8ddMbLbekr7bKF7cm81aekI1pxlj6mJnRgoRp4fDZVBKKSW+S27N+18qKqeLpznNUuyKGbuFVSjUUeJ2bXnud9HRrFpreOrhralpiJpPRs09b8a005UrNNPvfA/OQkXZFrMMxZTTrT8MI73tf8AFK7mPcxazDMe3jDOwGkamHnnpNRnlcLuKlsdr7HzGXPWfHN3Ve3IqdO3VIbMV0Kc6k4wgs05tRiuX2HO2nS3W0Olb3jpWW66o6bxOInVhXaqRhCMlNRUHGTdsrts2/szatGvv0eaXQyN0To2GFoxpx2y8KpP683vfNxciM/Rb7/Hml0HydSazaZrs+ppxaKxFp6tiAB4ewAAAAAAAAAAQWsDtOnzS6UYdGRf1olaVLlU/U4+0j8PUAkHIx8fhYV6VSjUv2OpCVOdnZ5ZKzsypSPc4GtrUTBf1fzse8XBf1fzs2TMMx0+NqfdPq8fDp9I9Gt+8XB/1fzse8XB/wBX87NkzDMb8bU+6fU+FT6R6NanqNg7O3ZL2du7e81Rak47hjSv43/o6hmGY9V4nUr258erzOjSez0cxpak4zNHNGlkzRzWqbct9ttnEbU9RsJbuXVjK2yXZL2fHZmyZhmFuI1LduPAjRpHZ6uU6TwFTDVHTqrbvhNeDOP1l+64DFzHU9K6Np4qm6dRcsJrwqcuCUf/AG05jpPAVMNUdOotu+E14M4/Wj7OAt4fX+JGJ3R62jyTmNlrMMxZzDMUuC65nQtUdCdgh2aou/VFsT/+cHwc74SD1M0L2SSxNVdxF96g14Ul9PmXAb3mPn8VrZ/4jzW8Po4/6nyKsirQ8u/x5pdBi15legp3xMfuzfqIlbbAAAAAAAAAAAAAEDrZQcqCmt9OV392Wx+uxrOExJ0CpCMouMknGSaae5p70c60tgJ4Wrl2uEnenPjXE+VATMKty5cgsPjDMhi0BI3FzA7aQ7aQGfcXMDtpDtpAZ9xcwO2kO2kBn3FzA7aQ7aQGfmMHS2jaeKpunPnhNeFCXBJezhPO2kO2kbEzE5hkxExiXMdI4Oph6kqdVWktqkvBnHglF8Rl6u6Jli6tndUabTqz3X4oJ8b6Dd9J4WhiYqNaOZRd4tNwlF8Nmi7gYUqFNU6UVCEb7Lttt72297K7cXM0x2p44aIt12SkEoxUYpKMUlFLYklwHk6ljBli0YtfGEalfxeJJXU+i5SqVXuS7HHlbs5dEfSa1hqdTEVFThtb3t7ox4ZPkOi6PwsaNOFOG6K38MnwyfOwMsAAAAAAAAAACiTKzxoDBxE5cBA6VUpwcJrNF8D4+NcptUoJlmeFi+ADlmIw9Sm3aLnHkspL9n6ix29l35488J9KR1KpounLekY1TV+lLgQHNHpaC3yf5Z+wpemqf1/9s/YdDnqpRf0UY89S6D4EBoXu7S+uvRL2Hnu9R+0Xol7Dd56i0HwFt6g0eIDTPd+j9pH0S9h574KH2kfRL2G4v+H9HiPP8PaIGn++Ch9pH0S9h77v0ftI+iXsNv8A8PaJUv4f0eIDTvd+j9ovRL2Hvu7R+0Xol7Dc46g0OIrhqJQXABpS03S+v6pewrWl6b3Tf5Z+w3mOpVBcCMiGqVBfRQGge6Ce7O+anN/sXaVOpUeyLiuOW/zJfvY6HS1epR+ijLp6Lpx3JAa1obDypq0VZvbKT8KXOzY8NKXCZMcLFbkXowSApiy6eJHoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//2Q=="
+                    alt="" width="100px"></a>
+                  
+
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="home" class="collapse show">
+      <div class="card card-body text-white bg-primary p-5">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="card card-body p-5">
+        <h3>Programming Language </h3>
+        <hr>
+        <h4>HTML 5</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 99%;"></div>
+        </div>
+        <h4>CSS 3</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 94%;"></div>
+        </div>
+        <h4>JavaScript</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 70%;"></div>
+        </div>
+        <h4>C Programming</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 90%;"></div>
+        </div>
+        <h4>PHP</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 80%;"></div>
+        </div>
+        <h4>Python</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 70%;"></div>
+        </div>
+        <h4>Data Structure</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 70%;"></div>
+        </div>
+        <h4>Java</h4>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width: 75%;"></div>
+        </div>
+        <br>
+        <br>
+        <div>
+          <h3>Operating System </h3>
+          <hr>
+          <h4>Windows</h4>
+          <h4>linux</h4>
+          <h4>unix</h4>
+        </div>
+        <br>
+        <br>
+        <div>
+          <h3>Hobbies</h3>
+          <hr>
+          <ul type="redios">
+            <li>CODING</li>
+            <li>GAMING</li>
+            <li>BAMINTION</li>
+            <li>CRICKET</li>
+          </ul>
+        </div>
+        <br>
+        <br>
+        <div>
+          <h3>Certificate</h3>
+          <hr>
+          <h4>HTML:GREATLEARNING</h4>
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDUCATION COLLAPSE -->
+    <div id="education" class="collapse">
+      <div class="card card-body text-white bg-success p-5">
+        <h3>Education</h3>
+        <p class="lead">
+          LOOKING FOR AN OPPORTUNITY TO UTILIZE MY ACQUIRED SKILLS AND TRAINING TO HELP THE ORGANIZATION AND MY FUTURE
+          PEERS GROW. I WANT MY EFFORTS TO MAKE A CONSIDERABLE DIFFERENCE TO THE ORGANIZATION AND HELP IN THEIR
+          CONSEQUENT SUCCESS.
+        </p>
+      </div>
+
+      <div class="card card-body p-5">
+        <h3>Education</h3>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Secondary/Senior Secondary</h4>
+              <p class="card-text">
+                Board of Secondary Education, Madhya Pradesh
+              </p>
+              <p class="text-white bg-dark mb-3 p-2">
+                10th 2014
+              </p>
+              <p class="text-white bg-dark mb-3 p-2">
+                12th 2017
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">2015 - 2018</h6>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Graduation</h4>
+              <p class="card-text">
+                Bachelor Of Computer Applications
+              </p>
+              <p>
+                Vikram University, Ujjain
+
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">2017 - 2020</h6>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Post-Graduation</h4>
+              <p class="card-text">
+                Master Of Computer Applications
+              </p>
+              <p>
+                Birla Institute Of Technology,Mesra Off-Campus Noida
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted">2021 - 2023</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="project" class="collapse">
+      <div class="card card-body text-white bg-warning p-5">
+        <h3>Projects</h3>
+      </div>
+      <div class="card card-body p-5">
+        <h3>Jewellery Shop</h3>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">It is an Website for Jewellery Shop Management</h4>
+              <p class="card-text">
+                Html,CSS,JavaScript
+              </p>
+              <p>
+              <ul title="redious">
+                <li>Developed using Html5, Css, Javascript</li>
+
+                <li>Customesrs can Check store online.</li>
+
+              </ul>
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted"></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-body p-5">
+        <h3>Tempurature</h3>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">This is an app to do different tasks related to tempurature.</h4>
+              <p class="card-text">
+                Html,CSS,JavaScript
+              </p>
+              <p>
+              <ul title="redious">
+                <li>Developed using Html5, Css, Javascript</li>
+                <li>users can define Celsius to Fahrenheit and Fahrenheit to Celsius</li>
+                <li>Users can input Calsius output Fahrenheit.</li>
+                <li>Users can input Fahrenheit output Calsius.</li>
+                <li>It is very simple project tempurature</li>
+              </ul>
+              </p>
+            </div>
+            <div class="card-footer">
+              <h6 class="text-muted"></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="collapse">
+      <div class="card card-body text-white bg-danger py-5">
+        <h2>Contact-us</h2>
+      </div>
+      <form>
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <span class="input-group-text text-white bg-danger">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control text-white bg-dark" placeholder="Name" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <span class="input-group-text text-white bg-danger">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+            <input type="email" class="form-control text-white bg-dark" placeholder="Email" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <span class="input-group-text text-white bg-danger">
+                <i class="fas fa-pencil-alt"></i>
+              </span>
+            </div>
+            <textarea class="form-control text-white bg-dark" placeholder="Feedback"></textarea>
+          </div>
+        </div>
+
+        <input type="Submit" value="Submit" class="btn btn-block btn-lg btn-danger p-2" />
+      </form>
+    </div>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js">
+  </script>
+  <script>
+
+    $('.portfolio-item').click(function () {
+      $('.collapse').collapse('hide');
+    });
+
+
+    $(document).on('click', '[data-toggle="lightbox"]', function (e) {
+      e.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
+</body>
+
+</html>
